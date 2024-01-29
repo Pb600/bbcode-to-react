@@ -3,7 +3,7 @@ export const NEWLINE_RE = /\r?\n/g;
 export const LINE_BREAK = '<br />';
 
 export const SPACE_RE = /^\s*$/;
-export const TOKEN_RE = /(\[\/?.+?\])/;
+export const TOKEN_RE = /(\[(?:(?:\/[^\]\[\n]+)|(?:[^\[\]\/\n]+?))\])/;
 export const START_NEWLINE_RE = /^\r?\n/;
 
 export const ESCAPE_RE = /[&<>"]/g;
